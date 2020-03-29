@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core'; 
-import {ReactiveFormsModule,FormsModule, FormControl, FormBuilder ,FormGroup, Validators} from '@angular/forms';  
-import { NgModule } from '@angular/core';
-
-
+import { FormControl ,FormBuilder, FormGroup,Validators} from '@angular/forms';  
+import { MustMatch } from './must-match.validator';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -53,5 +51,4 @@ export class FormComponent implements OnInit {
     this.submitted = false;
     this.registerForm.reset();
   }
-
 }
